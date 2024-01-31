@@ -1,4 +1,5 @@
 class Ave {
+
     private _envergadura: number;
 
     constructor(envergadura: number) {
