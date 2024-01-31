@@ -1,7 +1,15 @@
 class Ave {
-    private envergadura: number;  
+    private _envergadura: number;
 
     constructor(envergadura: number) {
-        this.envergadura = envergadura;
+        this._envergadura = envergadura;
+    }
+
+    get envergadura(): number {
+        return this._envergadura;
+    }
+
+    set envergadura(value: number) {
+        this._envergadura = value;
     }
 }
