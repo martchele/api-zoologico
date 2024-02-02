@@ -1,7 +1,7 @@
 
 import { Animal } from "./Animal";
 
-export class Maminfero extends Animal {
+export class Mamifero extends Animal {
     private raca: string;
 
     constructor(_raca: string,

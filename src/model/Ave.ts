@@ -3,7 +3,7 @@ import { Animal } from "./Animal";
  export class Ave extends Animal {
     private envergadura: number;
 
-    constructor(_raca: string,
+    constructor(
                 _nome: string, 
                 _idade: number,
                 _genero: string,
