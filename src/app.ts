@@ -8,7 +8,9 @@ server.use(express.json());
 server.use(cors());
 
 server.get ('/', (req, res)=> {
-res.json('Olá mundo!!');
+    let ave: Ave = new Ave(`Papagaio`, 30,`Masculino`, 10);
+    res.json(ave);
+//res.json('Olá mundo!!');
 })
 
 server.listen(port, () => {
