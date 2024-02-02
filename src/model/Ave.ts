@@ -1,16 +1,20 @@
-class Ave {
+class Ave extends Animal {
+    private envergadura: number;
 
-    private _envergadura: number;
-
-    constructor(envergadura: number) {
-        this._envergadura = envergadura;
+    constructor(_raca: string,
+                _nome: string, 
+                _idade: number,
+                _genero: string,
+                _envergadura: number) {
+        super(_nome, _idade, _genero);
+        this.envergadura = _envergadura;
     }
-
-    get envergadura(): number {
-        return this._envergadura;
+         
+    public getEnvergadura(): number {
+        return this.envergadura;
     }
-
-    set envergadura(value: number) {
-        this._envergadura = value;
+    
+    public setEnvergadura(envergadura: number): void {
+        this.envergadura = envergadura;
     }
 }
