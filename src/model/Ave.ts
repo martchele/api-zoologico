@@ -1,4 +1,6 @@
-class Ave extends Animal {
+import { Animal } from "./Animal";
+
+ export class Ave extends Animal {
     private envergadura: number;
 
     constructor(_raca: string,
@@ -15,6 +17,8 @@ class Ave extends Animal {
     }
     
     public setEnvergadura(envergadura: number): void {
-        this.envergadura = envergadura;
+        this.envergadura = envergadura; 
     }
+    
+    
 }

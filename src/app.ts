@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import { Ave } from './model/Ave';
 
 const server = express();
 const port = 3000;
