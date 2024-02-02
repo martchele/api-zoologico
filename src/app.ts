@@ -17,6 +17,11 @@ server.get ('/', (req, res)=> {
     res.json ({ave, reptil, mamifero});
 //res.json('Olá mundo!!');
 })
+server.post('/ave', (req,res)=>{
+    const {nome, idade, genero, envergadura} = req.body;
+    let ave: Ave = new Ave(nome, idade, genero, envergadura);
+    res.json(ave);
+});
 
 server.listen(port, () => {
     console.log(`Servidor está escutando no endereço http://localhost:${port}`);
