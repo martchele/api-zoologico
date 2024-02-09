@@ -1,4 +1,3 @@
-import { run } from "node:test";
 import { Animal } from "./Animal"
 
 class Habitat {
@@ -17,5 +16,12 @@ class Habitat {
      */
     public getNome(): string{
         return this.nome;
+    }
+    /**Define o nome do ha bitat
+     * 
+     * @paran _listaAnimais A lsita de animais a ser atribuida ao habitat
+     */
+    public setListaAnimais(_listaAnimais: Array<Animal>): void{
+        this.listaAnimais = _listaAnimais;
     }
 }
