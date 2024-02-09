@@ -26,3 +26,24 @@ server.post('/ave', (req,res)=>{
 server.listen(port, () => {
     console.log(`Servidor está escutando no endereço http://localhost:${port}`);
 })
+
+server. post('/habitat', (req, res)=>{
+    const{nome, animais } = req.body;
+    const habitat = new Habitat(nome, animais);
+    console.log(habitat);
+    res.status(200).json('Habitat criado');
+});
+  
+server. post('/atracao', (req, res)=>{
+    const{nome, animais } = req.body;
+    const atracao = new Atracao(nome, animais);
+    console.log(atracao);
+    res.status(200).json('Atração criado');
+});
+
+server. post('/zoologico', (req, res)=>{
+    const{nome, animais } = req.body;
+    const habitat = new Zoologico(nome, animais);
+    console.log(habitat);
+    res.status(200).json('zoologico criado');
+});
